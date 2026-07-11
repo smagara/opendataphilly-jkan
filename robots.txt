@@ -4,7 +4,7 @@ permalink: /robots.txt
 ---
 User-agent: *
 {% if jekyll.environment == "production" %}
-Disallow:
+Disallow: /editor/
 {% else %}
 Disallow: /
 {% endif %}
