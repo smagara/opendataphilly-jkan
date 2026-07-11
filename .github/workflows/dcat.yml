@@ -21,7 +21,7 @@ jobs:
         run: |
           echo "branch: $BRANCH" > _config.ci.yml
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default. These url, baseurl flags are Copilot PR review suggestions.
+        # Outputs to the './_site' directory by default. The url, baseurl flags are Copilot PR review suggestions.
         run: bundle exec jekyll build --url "https://opendataphilly.org" --baseurl "" --config _config.ci.yml,_config.yml
         env:
           JEKYLL_ENV: production
